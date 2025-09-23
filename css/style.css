@@ -1,0 +1,172 @@
+/* Importação de fonte externa */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Estrutura do Site */
+header, main, footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+header img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1351d8;
+    font-weight: bold;
+}
+
+/* Conteúdo Principal */
+main {
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1b357e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Página Principal */
+.lancamento-destaque {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.lancamento-destaque img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Página de Lançamento */
+.video-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+}
+
+.galeria-imagens {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.galeria-imagens img {
+    width: 33%;
+    height: auto;
+}
+
+.tabela-modelos {
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Página de Contato */
+.formulario-contato {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Pseudoclasses e Transições */
+button:hover {
+    background-color: #004d99;
+    transform: scale(1.05); /* Opcional: Efeito de destaque */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+    nav ul {
+        margin-top: 10px;
+    }
+    .galeria-imagens {
+        flex-direction: column;
+    }
+    .galeria-imagens img {
+        width: 100%;
+    }
+}
