@@ -161,7 +161,7 @@ footer p {
     margin: 0 auto 50px auto;
     text-align: center;
 }
-
+ 
 .modelos-tabela-cards {
     width: 100%;
     border-collapse: collapse;
@@ -295,6 +295,12 @@ footer p {
 .formulario-caixa form select:focus {
     border-color: #1b357e;
     outline: none;
+}
+
+.formulario-caixa textarea {
+    resize: none;
+    height: 100px;
+    width: 100%;
 }
 
 .botao-azul {
