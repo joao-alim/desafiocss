@@ -20,53 +20,69 @@
 
     <main>
         <section class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/vQsryuNmsL0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/vQsryuNmsL0?autoplay=1&mute=1&loop=1&playlist=vQsryuNmsL0&controls=0" 
+            frameborder="0" 
+            allow="autoplay; encrypted-media; picture-in-picture" 
+            allowfullscreen>
+    </iframe>
             <div class="video-descricao">
                 <h2>Ford Ranger 2022 | Gerações</h2>
                 <p>O novo vídeo promocional da Ford Ranger 2022 celebra a história e a força da picape. O vídeo tem 2 minutos e 44 segundos de duração e foi publicado em 6 de agosto de 2021.</p>
             </div>
         </section>
 
-        <section class="galeria-imagens">
-            <img src="/img/storm.jpg" alt="Veículo 1">
-            <img src="/img/XL Cabine.jpg" alt="Veículo 2">
-            <img src="/img/xls 2.2 diesel.jpg" alt="Veículo 3">
-        </section>
-
-        <section class="tabela-modelos">
-            <h2>Modelos Disponíveis</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Comparar</th>
-                        <th>Modelo</th>
-                        <th>Versão</th>
-                        <th>Preço (R$)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Explorer</td>
-                        <td>Limited</td>
-                        <td>300.000</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Explorer</td>
-                        <td>Platinum</td>
-                        <td>350.000</td>
-                    </tr>
-                    <tr>
-                        <td><input type="checkbox"></td>
-                        <td>Explorer</td>
-                        <td>ST-Line</td>
-                        <td>375.000</td>
-                    </tr>
-                </tbody>
+ <section class="comparacao-modelos">
+        <table class="modelos-tabela-cards">
+            <thead>
+                <tr>
+                    <th class="modelo-card">
+                        <div class="card-item">
+                            <img src="/img/XL Cabine.jpg" alt="Veículo 1">
+                            <div class="info">
+                                <input type="checkbox" id="modelo1" checked>
+                                <label for="modelo1">
+                                    XL Cabine Simples 2.2 Diesel
+                                    <small>Preço a partir de R$ 99.000</small>
+                                </label>
+                            </div>
+                        </div>
+                    </th>
+                    
+                    <th class="modelo-card">
+                        <div class="card-item">
+                            <img src="/img/xls 2.2 diesel.jpg" alt="Veículo 2">
+                            <div class="info">
+                                <input type="checkbox" id="modelo2">
+                                <label for="modelo2">
+                                    XLS 2.2 Diesel 4X4 AT 2022
+                                    <small>Preço a partir de R$ 169.990</small>
+                                </label>
+                                <a href="#" class="detalhes"></a>
+                            </div>
+                        </div>
+                    </th>
+                    
+                    <th class="modelo-card">
+                        <div class="card-item">
+                            <img src="/img/storm.jpg" alt="Veículo 3">
+                            <div class="info">
+                                <input type="checkbox" id="modelo3">
+                                <label for="modelo3">
+                                    Storm 3.2 Diesel 4X4 AT 2022
+                                    <small>Preço a partir de R$ 199.990</small>
+                                </label>
+                            </div>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
             </table>
-            <button>Comparar</button>
-        </section>
+
+        <div class="botao-comparar">
+            <button>Comparar Carros</button>
+        </div>
+    </section>
     </main>
 
     <footer>
@@ -76,6 +92,9 @@
             <a href="https://www.youtube.com/fordbrasil"><img src="img/youtube-squared-50.png"></a>
         </div>
         <p>&copy; 2025 Ford Motor Company. Todos os direitos reservados.</p>
+        <div>
+            <img src="/img/ford-96.png" alt="">
+        </div>
     </footer>
 </body>
 </html>
