@@ -66,33 +66,38 @@ color: rgb(16, 86, 151);
 }
 
 @media (max-width: 600px) {
-    header {
-        flex-direction: column;
+    .header {
+        padding: 1rem 1rem;
         justify-content: center;
+        flex-direction: column;
+      }
+    
+      .header img {
+        height: 50px;
+      }
+    
+      .menu {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+      }
+    
+      .lista {
+        flex-direction: column;
         align-items: center;
-        padding: 15px 10px;
-        position: static;
-    }
-
-    .menu-centralizado {
-        position: static;
-        width: auto;
-        text-align: center;
-        padding: 0;
-    }
-
-    header img {
-        margin-bottom: 10px;
-    }
-
-    nav ul {
-        flex-direction: row;
         gap: 10px;
-    }
-
-    nav li {
-        margin: 0 5px;
-    }
+        width: 100%;
+      }
+    
+      .lista li {
+        width: 100%;
+        text-align: center;
+      }
+    
+      .lista a {
+        display: block;
+        width: 100%;
+      }
 }
 
 /* Conteúdo Principal */
